@@ -37,7 +37,7 @@ pipeline {
 ## What is a Blue Ocean?
 Blue Ocean is a new project that rethinks the user experience of Jenkins. Designed from the ground up for Jenkins Pipeline and compatible with Freestyle jobs, Blue Ocean reduces clutter and increases clarity for every member of your team.
 
-![Blue Ocean](./docs/images/blue-ocean/pipeline-activity.png "Blue Ocean")
+![Blue Ocean](https://raw.githubusercontent.com/Shimmi/docker-jenkins/master/docs/images/blue-ocean/pipeline-activity.png "Blue Ocean")
 
 # Usage
 _Please refer to the [original image](https://store.docker.com/images/d55eda09-d7f0-47b0-8780-3407f2f9142c?tab=description) description for additional configuration nad usage of the Jenkins docker image._
