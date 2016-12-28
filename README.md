@@ -1,6 +1,13 @@
 # Jenkins with Blue Ocean and support for builiding jobs in Docker
 _For a new Jenkins experience._
 
+[![dockeri.co](http://dockeri.co/image/shimmi/jenkins)](https://registry.hub.docker.com/shimmi/jenkins/)
+
+[![](https://images.microbadger.com/badges/image/shimmi/jenkins.svg)](https://microbadger.com/images/shimmi/jenkins "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/shimmi/jenkins.svg)](https://microbadger.com/images/shimmi/jenkins "Get your own version badge on microbadger.com")
+[![GitHub issues](https://img.shields.io/github/issues/shimmi/docker-jenkins.svg "GitHub issues")](https://github.com/docker-jenkins)
+[![GitHub stars](https://img.shields.io/github/stars/shimmi/docker-jenkins.svg "GitHub stars")](https://github.com/docker-jenkins)
+
 Based on the [Official Jenkins Docker image](https://store.docker.com/images/d55eda09-d7f0-47b0-8780-3407f2f9142c "official image"). This image adds support for running Docker CLI inside the Jenkins
 container and builiding the jobs using declarative pipelines with Docker. Bundled with Blue Ocean plugin.
 
