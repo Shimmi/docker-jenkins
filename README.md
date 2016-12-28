@@ -1,4 +1,4 @@
-# Jenkins with Blue Ocean and support for builiding jobs in Docker
+# Jenkins with Blue Ocean and support for building jobs in Docker
 _For a new Jenkins experience._
 
 [![dockeri.co](http://dockeri.co/image/shimmi/jenkins)](https://registry.hub.docker.com/shimmi/jenkins/)
@@ -9,16 +9,16 @@ _For a new Jenkins experience._
 [![GitHub stars](https://img.shields.io/github/stars/shimmi/docker-jenkins.svg "GitHub stars")](https://github.com/docker-jenkins)
 
 Based on the [Official Jenkins Docker image](https://store.docker.com/images/d55eda09-d7f0-47b0-8780-3407f2f9142c "official image"). This image adds support for running Docker CLI inside the Jenkins
-container and builiding the jobs using declarative pipelines with Docker. Bundled with Blue Ocean plugin.
+container and building the jobs using declarative pipelines with Docker. Bundled with Blue Ocean plugin.
 
 ## Note on the image
-The image is automatically build on any change to the [Shimmi/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://hub.docker.com/r/_/jenkins) changes. 
+The image is automatically built on any change to the [Shimmi/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://hub.docker.com/r/_/jenkins) changes. 
 
 ## What is a Pipeline?
 Pipelines are a series of steps that allow you to orchestrate the work required to build, test and deploy applications. Pipelines are defined in a file called Jenkinsfile that is stored in the root of your project’s source repository.
 
 ## What is a Declarative pipeline?
-Announced at Jenkins World on Wednesday 14th alongise with Blue Ocean the Declarative pipeline is a
+Announced at Jenkins World on Wednesday 14th along with Blue Ocean the Declarative pipeline is a
 new way of how to **configure** the Pipelines rather than **script** them.
 
 Docker support in Declarative Pipeline allows you to version your application code, Jenkins Pipeline configuration, and the environment where your pipeline will run, all in a single repository. It’s a crazy powerful combination.
@@ -39,7 +39,7 @@ pipeline {
 }
 ```
 
-[See additional basic examples in another languages](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/getting%20started#quick-start). 
+[See additional basic examples in another language](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/getting%20started#quick-start). 
 
 ## What is a Blue Ocean?
 Blue Ocean is a new project that rethinks the user experience of Jenkins. Designed from the ground up for Jenkins Pipeline and compatible with Freestyle jobs, Blue Ocean reduces clutter and increases clarity for every member of your team.
@@ -47,13 +47,13 @@ Blue Ocean is a new project that rethinks the user experience of Jenkins. Design
 ![Blue Ocean](https://raw.githubusercontent.com/Shimmi/docker-jenkins/master/docs/images/blue-ocean/pipeline-activity.png "Blue Ocean")
 
 # Usage
-_Please refer to the [original image](https://store.docker.com/images/d55eda09-d7f0-47b0-8780-3407f2f9142c?tab=description) description for additional configuration nad usage of the Jenkins docker image._
+_Please refer to the [original image](https://store.docker.com/images/d55eda09-d7f0-47b0-8780-3407f2f9142c?tab=description) description for additional configuration and usage of the Jenkins docker image._
 
 ## Using `docker-compose`
 1. Clone the repo or just the `docker-compose.yml` file.
 2. Go to that folder and run `docker-compose up`.
 
-## Run the image
+## Using `docker run`
 You can also run the image without any cloning by using the `docker run` command.
 
 `docker run -d --name my_jenkins -v /your/home/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 shimmi/jenkins`
