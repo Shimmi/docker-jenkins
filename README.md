@@ -28,7 +28,7 @@ Declarative Pipeline introduces the postBuild section that makes it easy to run 
 ### Example of Declarative pipeline
 ```
 pipeline {
-  agent docker:'php'
+  agent { docker 'php' }
   stages {
     stage('build') {
       steps {
@@ -38,8 +38,11 @@ pipeline {
   }
 }
 ```
+[See additional basic examples in another language](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/getting%20started#quick-start).
 
-[See additional basic examples in another language](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/getting%20started#quick-start). 
+### Changelog and beta notice
+Please keep in mind the declarative pipeline is still in beta. The syntax should not change much.
+Refer to the [changelog](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/Version-History-and-Changes) on Wiki for latest syntax updates. 
 
 ## What is a Blue Ocean?
 Blue Ocean is a new project that rethinks the user experience of Jenkins. Designed from the ground up for Jenkins Pipeline and compatible with Freestyle jobs, Blue Ocean reduces clutter and increases clarity for every member of your team.
