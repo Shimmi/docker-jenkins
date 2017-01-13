@@ -29,7 +29,8 @@ RUN cd \
     && rmdir docker \
     && rm docker.tgz
 
-RUN usermod -aG docker,staff jenkins
+RUN groupadd docker \
+    && usermod -aG docker,staff jenkins
 
 USER jenkins
 
