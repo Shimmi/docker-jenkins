@@ -12,7 +12,7 @@ Based on the [Official Jenkins Docker image](https://store.docker.com/community/
 container and building the jobs using declarative pipelines with Docker. Bundled with Blue Ocean plugin.
 
 ## Note on the image
-The image is automatically built on any change to the [Shimmi/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://hub.docker.com/r/_/jenkins) changes. 
+The image is automatically built on any change to the [Shimmi/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://store.docker.com/community/images/jenkinsci/jenkins) changes.
 
 ## What is a Pipeline?
 Pipelines are a series of steps that allow you to orchestrate the work required to build, test and deploy applications. Pipelines are defined in a file called Jenkinsfile that is stored in the root of your project’s source repository.
