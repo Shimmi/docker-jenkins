@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins/jenkins
 
 MAINTAINER Jiří Šimeček <jirka@simecek.org>
 
