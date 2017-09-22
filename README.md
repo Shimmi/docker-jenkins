@@ -56,6 +56,12 @@ _Please refer to the [original image](https://store.docker.com/images/d55eda09-d
 1. Clone the repo or just the `docker-compose.yml` file.
 2. Go to that folder and run `docker-compose up`.
 
+### Upgrading
+1. Prepare Jenkins to shutdown (Manage Jenkins > Prepare for Shutdown).
+2. Go to your `docker-compose.yml` folder.
+3. Run `docker-compose stop` to stop the Jenkins.
+4. Run `docker-compose up -d` to recreate the container with new image and run it as a daemon.
+
 ## Using `docker run`
 You can also run the image without any cloning by using the `docker run` command.
 
