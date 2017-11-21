@@ -1,6 +1,10 @@
 # Jenkins with Blue Ocean and support for building jobs in Docker
 _For a new Jenkins experience._
 
+## Supported tags and respective `Dockerfile` links
+* `lts` [(lts/Dockerfile)](https://github.com/Shimmi/docker-jenkins/blob/master/lts/Dockerfile) - Long term support
+* `latest` [(latest/Dockerfile)](https://github.com/Shimmi/docker-jenkins/blob/master/latest/Dockerfile) - Weekly updates
+
 [![dockeri.co](http://dockeri.co/image/shimmi/jenkins)](https://registry.hub.docker.com/shimmi/jenkins/)
 
 [![](https://images.microbadger.com/badges/image/shimmi/jenkins.svg)](https://microbadger.com/images/shimmi/jenkins "Get your own image badge on microbadger.com")
