@@ -54,6 +54,13 @@ _Please refer to the [official documentation](https://github.com/jenkinsci/docke
 1. Clone the repo or just the `docker-compose.yml` file.
 2. Go to that folder and run `docker-compose up -d`.
 
+### Solving "docker.sock is not a valid Windows path" error
+If you are getting this error (on Docker version 18 and above), please set environment variable `COMPOSE_CONVERT_WINDOWS_PATHS` to true.
+
+E.g. In Powershell, you can do: `$env:COMPOSE_CONVERT_WINDOWS_PATHS=1`.
+
+See [docker/compose#4240](https://github.com/docker/compose/issues/4240) issue for more info.
+
 ### Upgrading
 1. Prepare Jenkins to shutdown (Manage Jenkins > Prepare for Shutdown).
 2. Go to your `docker-compose.yml` folder.
@@ -62,12 +69,12 @@ _Please refer to the [official documentation](https://github.com/jenkinsci/docke
 ## Using `docker run`
 You can also run the image without any cloning by using the `docker run` command.
 
-`docker run -d --name my_jenkins -v /your/home/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 shimmi/jenkins`
+`docker run -d --name my_jenkins -v /your/home/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 --group-add docker shimmi/jenkins`
 
 Please alter the `/your/home/jenkins_home` path to your needs.
 
 ### E.g. On windows:
-`docker run -d --name my_jenkins -v /C/Users/<your-profile>/Documents/docker/jenkins/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 shimmi/jenkins`
+`docker run -d --name my_jenkins -v /C/Users/<your-profile>/Documents/docker/jenkins/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080  --group-add docker shimmi/jenkins`
 
 # Resources
 * [Pipeline model definition - Wiki](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/getting%20started)
