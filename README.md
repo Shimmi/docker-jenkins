@@ -7,11 +7,6 @@ _For a new Jenkins experience._
 
 [![dockeri.co](http://dockeri.co/image/616slayer616/jenkins)](https://registry.hub.docker.com/616slayer616/jenkins/)
 
-[![](https://images.microbadger.com/badges/image/616slayer616/jenkins.svg)](https://microbadger.com/images/616slayer616/jenkins "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/616slayer616/jenkins.svg)](https://microbadger.com/images/616slayer616/jenkins "Get your own version badge on microbadger.com")
-[![GitHub issues](https://img.shields.io/github/issues/616slayer616/docker-jenkins.svg "GitHub issues")](https://github.com/616slayer616/docker-jenkins/issues)
-[![GitHub stars](https://img.shields.io/github/stars/616slayer616/docker-jenkins.svg "GitHub stars")](https://github.com/616slayer616/docker-jenkins/stargazers)
-
 Based on the [Official Jenkins Docker image](https://store.docker.com/community/images/jenkins/jenkins "official image"). This image adds support for running Docker CLI inside the Jenkins container and building the jobs using declarative pipelines with Docker. Bundled with [Blue Ocean](https://jenkins.io/projects/blueocean/).
 
 ## Note on the image
