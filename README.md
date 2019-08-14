@@ -15,7 +15,7 @@ _For a new Jenkins experience._
 Based on the [Official Jenkins Docker image](https://store.docker.com/community/images/jenkins/jenkins "official image"). This image adds support for running Docker CLI inside the Jenkins container and building the jobs using declarative pipelines with Docker. Bundled with [Blue Ocean](https://jenkins.io/projects/blueocean/).
 
 ## Note on the image
-The image is automatically built on any change pushed to the [Shimmi/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://store.docker.com/community/images/jenkinsci/jenkins) changes.
+The image is automatically built on any change pushed to the [616slayer616/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://store.docker.com/community/images/jenkinsci/jenkins) changes.
 
 ## What is a Pipeline?
 Pipelines are a series of steps that allow you to orchestrate the work required to build, test and deploy applications. Pipelines are defined in a file called `Jenkinsfile` that is stored in the root of your project’s source repository.
@@ -69,12 +69,12 @@ See [docker/compose#4240](https://github.com/docker/compose/issues/4240) issue f
 ## Using `docker run`
 You can also run the image without any cloning by using the `docker run` command.
 
-`docker run -d --name my_jenkins -v /your/home/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 --group-add docker shimmi/jenkins`
+`docker run -d --name my_jenkins -v /your/home/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 --group-add docker 616slayer616/jenkins`
 
 Please alter the `/your/home/jenkins_home` path to your needs.
 
 ### E.g. On windows:
-`docker run -d --name my_jenkins -v /C/Users/<your-profile>/Documents/docker/jenkins/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080  --group-add docker shimmi/jenkins`
+`docker run -d --name my_jenkins -v /C/Users/<your-profile>/Documents/docker/jenkins/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080  --group-add docker 616slayer616/jenkins`
 
 # Resources
 * [Pipeline model definition - Wiki](https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/getting%20started)

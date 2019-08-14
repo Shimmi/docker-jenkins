@@ -1,6 +1,6 @@
 FROM jenkins/jenkins
 
-MAINTAINER Jiří Šimeček <jirka@simecek.org>
+MAINTAINER Patrick Adler <patrick@padler.org>
 
 USER root
 
