@@ -2,20 +2,20 @@
 _For a new Jenkins experience._
 
 ## Supported tags and respective `Dockerfile` links
-* `lts` [(lts/Dockerfile)](https://github.com/Shimmi/docker-jenkins/blob/master/lts/Dockerfile) - Long term support
-* `latest` [(latest/Dockerfile)](https://github.com/Shimmi/docker-jenkins/blob/master/latest/Dockerfile) - Weekly updates
+* `lts` [(lts/Dockerfile)](https://github.com/616slayer616/docker-jenkins/blob/master/lts/Dockerfile) - Long term support
+* `latest` [(latest/Dockerfile)](https://github.com/616slayer616/docker-jenkins/blob/master/latest/Dockerfile) - Weekly updates
 
-[![dockeri.co](http://dockeri.co/image/shimmi/jenkins)](https://registry.hub.docker.com/shimmi/jenkins/)
+[![dockeri.co](http://dockeri.co/image/616slayer616/jenkins)](https://registry.hub.docker.com/616slayer616/jenkins/)
 
-[![](https://images.microbadger.com/badges/image/shimmi/jenkins.svg)](https://microbadger.com/images/shimmi/jenkins "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/shimmi/jenkins.svg)](https://microbadger.com/images/shimmi/jenkins "Get your own version badge on microbadger.com")
-[![GitHub issues](https://img.shields.io/github/issues/shimmi/docker-jenkins.svg "GitHub issues")](https://github.com/Shimmi/docker-jenkins/issues)
-[![GitHub stars](https://img.shields.io/github/stars/shimmi/docker-jenkins.svg "GitHub stars")](https://github.com/Shimmi/docker-jenkins/stargazers)
+[![](https://images.microbadger.com/badges/image/616slayer616/jenkins.svg)](https://microbadger.com/images/616slayer616/jenkins "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/616slayer616/jenkins.svg)](https://microbadger.com/images/616slayer616/jenkins "Get your own version badge on microbadger.com")
+[![GitHub issues](https://img.shields.io/github/issues/616slayer616/docker-jenkins.svg "GitHub issues")](https://github.com/616slayer616/docker-jenkins/issues)
+[![GitHub stars](https://img.shields.io/github/stars/616slayer616/docker-jenkins.svg "GitHub stars")](https://github.com/616slayer616/docker-jenkins/stargazers)
 
 Based on the [Official Jenkins Docker image](https://store.docker.com/community/images/jenkins/jenkins "official image"). This image adds support for running Docker CLI inside the Jenkins container and building the jobs using declarative pipelines with Docker. Bundled with [Blue Ocean](https://jenkins.io/projects/blueocean/).
 
 ## Note on the image
-The image is automatically built on any change pushed to the [616slayer616/docker-jenkins](https://github.com/Shimmi/docker-jenkins) repo and/or when [original Jenkins image](https://store.docker.com/community/images/jenkinsci/jenkins) changes.
+The image is automatically built on any change pushed to the [616slayer616/docker-jenkins](https://github.com/616slayer616/docker-jenkins) repo and/or when [original Jenkins image](https://store.docker.com/community/images/jenkinsci/jenkins) changes.
 
 ## What is a Pipeline?
 Pipelines are a series of steps that allow you to orchestrate the work required to build, test and deploy applications. Pipelines are defined in a file called `Jenkinsfile` that is stored in the root of your project’s source repository.
@@ -45,7 +45,7 @@ pipeline {
 ## What is a Blue Ocean?
 Blue Ocean is a new project that rethinks the user experience of Jenkins. Designed from the ground up for Jenkins Pipeline and compatible with Freestyle jobs, Blue Ocean reduces clutter and increases clarity for every member of your team.
 
-![Blue Ocean](https://raw.githubusercontent.com/Shimmi/docker-jenkins/master/docs/images/blue-ocean/pipeline-activity.png "Blue Ocean")
+![Blue Ocean](https://raw.githubusercontent.com/616slayer616/docker-jenkins/master/docs/images/blue-ocean/pipeline-activity.png "Blue Ocean")
 
 # Usage
 _Please refer to the [official documentation](https://github.com/jenkinsci/docker/blob/master/README.md) description for additional configuration and usage of the Jenkins docker image._
