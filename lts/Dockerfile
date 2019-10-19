@@ -4,6 +4,8 @@ MAINTAINER Patrick Adler <patrick@padler.org>
 
 USER root
 
+RUN apt-get update && apt-get upgrade
+
 RUN apt-get update && apt-get install -y \
     apt-transport-https \
     software-properties-common
