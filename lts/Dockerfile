@@ -26,5 +26,4 @@ RUN install-plugins.sh \
     workflow-aggregator \
     pipeline-stage-view \
     git \
-    cloudbees-bitbucket-branch-source \
-    github-organization-folder
+    cloudbees-bitbucket-branch-source
