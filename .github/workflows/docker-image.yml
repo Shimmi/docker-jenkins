@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_TOKEN
     - name: Build the Docker image
-      run: docker build . --file latest/Dockerfile --tag 616slayer616/jenkins:$(date +%s)
+      run: docker build . --file latest/Dockerfile --tag 616slayer616/jenkins:latest
       
     - name: Docker Push
       run: docker push 616slayer616/jenkins
