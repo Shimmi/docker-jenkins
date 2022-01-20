@@ -5,7 +5,7 @@ _For a new Jenkins experience._
 * `lts` [(lts/Dockerfile)](https://github.com/616slayer616/docker-jenkins/blob/master/lts/Dockerfile) - Long term support
 * `latest` [(latest/Dockerfile)](https://github.com/616slayer616/docker-jenkins/blob/master/latest/Dockerfile) - Weekly updates
 
-[![dockeri.co](http://dockeri.co/image/616slayer616/jenkins)](https://registry.hub.docker.com/616slayer616/jenkins/)
+[![dockeri.co](http://dockeri.co/image/616slayer616/jenkins)](https://hub.docker.com/r/616slayer616/jenkins)
 
 Based on the [Official Jenkins Docker image](https://store.docker.com/community/images/jenkins/jenkins "official image"). This image adds support for running Docker CLI inside the Jenkins container and building the jobs using declarative pipelines with Docker. Bundled with [Blue Ocean](https://jenkins.io/projects/blueocean/).
 
