@@ -20,7 +20,9 @@ jobs:
         DOCKER_TOKEN: ${{secrets.DOCKER_TOKEN}}
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_TOKEN
-    - name: Build the Docker image
+    - name: Build lts Docker image
+      run: docker build . --file lts/Dockerfile --tag 616slayer616/jenkins:lts
+    - name: Build latest Docker image
       run: docker build . --file latest/Dockerfile --tag 616slayer616/jenkins:latest
       
     - name: Docker Push
