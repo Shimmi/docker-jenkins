@@ -19,6 +19,7 @@ RUN usermod -aG docker,staff jenkins
 USER jenkins
 
 # Install Jenkins plugins
+ENV CURL_OPTIONS -sSfL --http1.1
 RUN install-plugins.sh \
     blueocean \
     docker-workflow \
